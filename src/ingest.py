@@ -14,10 +14,9 @@ for k in ("OPENAI_API_KEY", "PGVECTOR_URL", "PGVECTOR_COLLECTION"):
     if not os.getenv(k):
         raise RuntimeError(f"Environment variable {k} is not set")
 
-
 def main():
     current_dir = Path(__file__).resolve().parent
-    default_path = current_dir.parent / "data" / "criptografia.pdf"
+    default_path = current_dir.parent / "document.pdf"
 
     if len(sys.argv) > 1:
         pdf_path = Path(sys.argv[1]).resolve()
