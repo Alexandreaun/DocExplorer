@@ -4,7 +4,7 @@ Agente para interagir via chat com assuntos baseados no documento PDF sobre Crip
 # Variáveis de ambiente:
 No arquivo .env.example coloque a sua chave de API da OPENAI
 
-# Postgres
+# Rodar Postgres
 Rodar no terminal: docker compose up -d
 Para subir o banco de dados Postgres
 
