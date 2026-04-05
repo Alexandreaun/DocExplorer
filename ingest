@@ -1,0 +1,4 @@
+
+DIR="$( cd "$( dirname "${BASH_SOURCE}" )" && pwd )"
+source "$DIR/venv/bin/activate"
+python3 "$DIR/src/ingest.py" "$@"

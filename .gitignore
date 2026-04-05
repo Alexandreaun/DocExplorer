@@ -2,8 +2,6 @@
 venv/
 .venv/
 env/
-# Variáveis de Ambiente
-.env
 # Python (Arquivos temporários e compilados)
 __pycache__/
 *.py[cod]
