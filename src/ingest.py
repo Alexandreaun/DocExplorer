@@ -10,11 +10,12 @@ from langchain_core.documents import Document
 from langchain_postgres import PGVector
 
 load_dotenv()
-for k in ("OPENAI_API_KEY", "PGVECTOR_URL", "PGVECTOR_COLLECTION"):
-    if not os.getenv(k):
-        raise RuntimeError(f"Environment variable {k} is not set")
 
 def main():
+    for k in ("OPENAI_API_KEY", "PGVECTOR_URL", "PGVECTOR_COLLECTION"):
+        if not os.getenv(k):
+            raise RuntimeError(f"Environment variable {k} is not set")
+
     current_dir = Path(__file__).resolve().parent
     default_path = current_dir.parent / "document.pdf"
 
